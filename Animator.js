@@ -9,10 +9,13 @@ class Animator {
 
 	drawFrame(tick, ctx, x, y) {
 
+		console.log(tick);
+		console.log(this.xStart);
+
 		this.elapsedTime += tick;
 		const frame = this.currentFrame();
 
-		ctx.drawImage(this.spritesheet,
+		ctx.drawImage(ASSET_MANAGER.getAsset("./LinkSpriteSheet.png"),
 			this.xStart + this.width*frame, this.yStart,
 			this.width, this.height,
 			x, y,
