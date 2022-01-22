@@ -6,8 +6,6 @@ class LinkSprite {
 		this.x =0;
         this.y=0;
         this.speed = 120;
-//		this.animator = new Animator(this.spritesheet, 0, 523, 96, 100, 10, 0.3);
-		//this.animator = new Animator(this.spritesheet, 0, 420, 96, 110, 10, 0.3);
 	};
 
 	update() {
