@@ -13,7 +13,7 @@ class Animator {
 		if(this.elapsedTime > this.totalTime) this.elapsedTime -= this.totalTime;
 		const frame = this.currentFrame();
 
-		ctx.drawImage(this.spritesheet,
+		ctx.drawImage(this.spritesheet, 
 			this.xStart + this.width*frame, this.yStart,
 			this.width, this.height,
 			x, y,
